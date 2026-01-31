@@ -56,3 +56,14 @@ dependencyResolutionManagement {
 
 include(":app")
 ```
+
+### 1. 删除本地缓存
+```
+rm -rf .gradle/
+rm -rf ~/.gradle/caches/8.14/
+```
+
+### 2. 运行编译（直接在 android 目录下）
+```
+./gradlew help -Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=7890 -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=7890
+```
