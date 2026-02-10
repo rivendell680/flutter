@@ -12,6 +12,6 @@ return this->template addEventListener(std::forward<Fn>(func), useCapture, true)
 ```
 修改后：
 
-``C++
+```C++
 return this->addEventListener(std::forward<Fn>(func), useCapture, true);
 ```
